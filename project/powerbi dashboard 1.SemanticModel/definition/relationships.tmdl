@@ -1,0 +1,4 @@
+relationship AutoDetected_3c3322e8-f2fc-47d6-a16c-190943e41a5c
+	fromColumn: Table1.'Item Identifier'
+	toColumn: 'BlinkIT Grocery Data'.'Item Identifier'
+

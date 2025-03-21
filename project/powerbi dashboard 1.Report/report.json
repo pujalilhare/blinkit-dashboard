@@ -1,0 +1,240 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.60\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "280716d90acbf886e353",
+      "config": "{}",
+      "name": "febe4eb6c43b02c50685",
+      "parameters": "[{\"name\":\"c6cccc05a9b5452942e4\",\"boundFilter\":\"aac66f7cb3bb8ffab268\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Rating\"}}},{\"name\":\"fa358f542587a60b8029\",\"boundFilter\":\"6506d6d9b9d0227743b7\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Rating\"}}},{\"name\":\"066f8c8ab81d9441bb2c\",\"boundFilter\":\"d2c2e543c9eff80ace39\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Item Fat Content\"}}}]",
+      "type": 1
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"aac66f7cb3bb8ffab268\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Rating\"}},\"type\":\"Categorical\",\"howCreated\":5},{\"name\":\"6506d6d9b9d0227743b7\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Rating\"}},\"type\":\"Categorical\",\"howCreated\":5},{\"name\":\"d2c2e543c9eff80ace39\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Item Fat Content\"}},\"type\":\"Categorical\",\"howCreated\":5}]",
+      "height": 720.00,
+      "name": "280716d90acbf886e353",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"05b0796474f578a7ed69\",\"layouts\":[{\"id\":0,\"position\":{\"x\":278.84514435695536,\"y\":517.3753280839895,\"z\":10000,\"width\":215.01312335958005,\"height\":184.7769028871391,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Y\":[{\"queryRef\":\"BlinkIT Grocery Data.No of items\"}],\"Category\":[{\"queryRef\":\"BlinkIT Grocery Data.Outlet Location Type\",\"active\":true}],\"Series\":[{\"queryRef\":\"BlinkIT Grocery Data.Item Fat Content\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Outlet Location Type\"},\"Name\":\"BlinkIT Grocery Data.Outlet Location Type\",\"NativeReferenceName\":\"Outlet Location Type\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Item Fat Content\"},\"Name\":\"BlinkIT Grocery Data.Item Fat Content\",\"NativeReferenceName\":\"Item Fat Content\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"No of items\"},\"Name\":\"BlinkIT Grocery Data.No of items\",\"NativeReferenceName\":\"No of items\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"No of items\"}}}]},\"queryFieldParametersByRole\":{\"Y\":[{\"index\":0,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"metrix\"}},\"Property\":\"metrix\"}}}]},\"columnProperties\":{\"BlinkIT Grocery Data.No of items\":{\"displayName\":\"No of items\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Item Fat Content\"}},\"Right\":{\"Literal\":{\"Value\":\"'Low Fat'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Item Fat Content\"}},\"Right\":{\"Literal\":{\"Value\":\"'Regular'\"}}}}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Fat by outlet'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 184.78,
+          "width": 215.01,
+          "x": 278.85,
+          "y": 517.38,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"06cfaf29bafc5b0ac8a5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":764.3044619422571,\"y\":95.74803149606299,\"z\":14000,\"width\":441.78477690288713,\"height\":236.85039370078738,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"BlinkIT Grocery Data.Outlet Establishment Year\",\"active\":true}],\"Y\":[{\"queryRef\":\"BlinkIT Grocery Data.total sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Outlet Establishment Year\"},\"Name\":\"BlinkIT Grocery Data.Outlet Establishment Year\",\"NativeReferenceName\":\"Outlet Establishment Year\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"total sales\"},\"Name\":\"BlinkIT Grocery Data.total sales\",\"NativeReferenceName\":\"total sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"total sales\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"lineStyles\":[{\"properties\":{\"lineChartType\":{\"expr\":{\"Literal\":{\"Value\":\"'smooth'\"}}},\"areaShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"areaMatchStrokeColor\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"areaColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFD200'\"}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Auto'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Outlet establishment'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 236.85,
+          "width": 441.78,
+          "x": 764.30,
+          "y": 95.75,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"07bfedb09eee26bba706\",\"layouts\":[{\"id\":0,\"position\":{\"x\":45.354330708661415,\"y\":119.26509186351706,\"z\":1000,\"width\":167.97900262467192,\"height\":72.23097112860893,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"blink\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}},{\"value\":\"it\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\",\"color\":\"#27ba27\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 72.23,
+          "width": 167.98,
+          "x": 45.35,
+          "y": 119.27,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"202065b3137846721c90\",\"layouts\":[{\"id\":0,\"position\":{\"x\":267.0866141732283,\"y\":421.6272965879265,\"z\":11000,\"width\":208.29396325459317,\"height\":149.501312335958,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 149.50,
+          "width": 208.29,
+          "x": 267.09,
+          "y": 421.63,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"27a41986994ecf3b65f7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1024.6719160104988,\"y\":359.4750656167979,\"z\":16000,\"width\":220.0524934383202,\"height\":151.1811023622047,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"BlinkIT Grocery Data.Outlet Location Type\",\"active\":true}],\"Y\":[{\"queryRef\":\"BlinkIT Grocery Data.total sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Outlet Location Type\"},\"Name\":\"BlinkIT Grocery Data.Outlet Location Type\",\"NativeReferenceName\":\"Outlet Location Type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"total sales\"},\"Name\":\"BlinkIT Grocery Data.total sales\",\"NativeReferenceName\":\"total sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"total sales\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"showAllDataPoints\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFD200'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Outlet Location Type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Tier 2'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B8DF42'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Outlet Location Type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Tier 3'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#C6BC50'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Outlet Location Type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Tier 1'\"}}}}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Outlet location'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 151.18,
+          "width": 220.05,
+          "x": 1024.67,
+          "y": 359.48,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"2c9160b68ed3c082579e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":406.50918635170603,\"y\":346.03674540682414,\"z\":12000,\"width\":189.81627296587925,\"height\":342.67716535433067,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"90L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"36D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 342.68,
+          "width": 189.82,
+          "x": 406.51,
+          "y": 346.04,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"392e8acd1af866e3ee7b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":265.4068241469816,\"y\":346.03674540682414,\"z\":8000,\"width\":236.85039370078738,\"height\":151.1811023622047,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"BlinkIT Grocery Data.Sales\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(BlinkIT Grocery Data.Item Fat Content)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Sales\"},\"Name\":\"BlinkIT Grocery Data.Sales\",\"NativeReferenceName\":\"Sales\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Item Fat Content\"}},\"Function\":2},\"Name\":\"CountNonNull(BlinkIT Grocery Data.Item Fat Content)\",\"NativeReferenceName\":\"Count of Item Fat Content\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Item Fat Content\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B8DF42'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Sales\"}},\"Right\":{\"Literal\":{\"Value\":\"171.1422D\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFD200'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Sales\"}},\"Right\":{\"Literal\":{\"Value\":\"40.2822D\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B8DF42'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Sales\"}},\"Right\":{\"Literal\":{\"Value\":\"196.2426D\"}}}}}]}}],\"legend\":[{\"properties\":{\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B8DF42'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Fat content'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 151.18,
+          "width": 236.85,
+          "x": 265.41,
+          "y": 346.04,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"3cb274259984e7cb2deb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":62.15223097112861,\"y\":255.3280839895013,\"z\":19000,\"width\":151.1811023622047,\"height\":40.31496062992126,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Filter panel\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"16pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFD200'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 40.31,
+          "width": 151.18,
+          "x": 62.15,
+          "y": 255.33,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"3f212bac17f34dfb0bd9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":251.96850393700785,\"y\":173.01837270341207,\"z\":4000,\"width\":241.88976377952756,\"height\":82.30971128608924,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"BlinkIT Grocery Data.Avaerage rating\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Avaerage rating\"},\"Name\":\"BlinkIT Grocery Data.Avaerage rating\",\"NativeReferenceName\":\"AVERAGE RATING\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Avaerage rating\"}}}]},\"columnProperties\":{\"BlinkIT Grocery Data.Avaerage rating\":{\"displayName\":\"AVERAGE RATING\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}}}}],\"categoryLabels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.31,
+          "width": 241.89,
+          "x": 251.97,
+          "y": 173.02,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"4af73eccfa52a1809433\",\"layouts\":[{\"id\":0,\"position\":{\"x\":492.1784776902887,\"y\":173.01837270341207,\"z\":6000,\"width\":236.85039370078738,\"height\":82.30971128608924,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"BlinkIT Grocery Data.No of items\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"No of items\"},\"Name\":\"BlinkIT Grocery Data.No of items\",\"NativeReferenceName\":\"NO OF ITEMS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"No of items\"}}}]},\"columnProperties\":{\"BlinkIT Grocery Data.No of items\":{\"displayName\":\"NO OF ITEMS\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"categoryLabels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.31,
+          "width": 236.85,
+          "x": 492.18,
+          "y": 173.02,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"4eab949e3bcb3ac273c2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":764.3044619422571,\"y\":537.5328083989501,\"z\":17000,\"width\":493.8582677165354,\"height\":151.1811023622047,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"BlinkIT Grocery Data.Outlet Type\",\"active\":true}],\"Values\":[{\"queryRef\":\"CountNonNull(BlinkIT Grocery Data.Item Visibility)\"},{\"queryRef\":\"BlinkIT Grocery Data.total sales\"},{\"queryRef\":\"CountNonNull(BlinkIT Grocery Data.Rating)\"},{\"queryRef\":\"BlinkIT Grocery Data.Avarage sales\"}],\"Columns\":[{\"queryRef\":\"BlinkIT Grocery Data.Item Type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Outlet Type\"},\"Name\":\"BlinkIT Grocery Data.Outlet Type\",\"NativeReferenceName\":\"Outlet Type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"total sales\"},\"Name\":\"BlinkIT Grocery Data.total sales\",\"NativeReferenceName\":\"total sales\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Item Type\"},\"Name\":\"BlinkIT Grocery Data.Item Type\",\"NativeReferenceName\":\"Item Type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Avarage sales\"},\"Name\":\"BlinkIT Grocery Data.Avarage sales\",\"NativeReferenceName\":\"Avarage sales\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Item Visibility\"}},\"Function\":5},\"Name\":\"CountNonNull(BlinkIT Grocery Data.Item Visibility)\",\"NativeReferenceName\":\"Item Visibility\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Rating\"}},\"Function\":5},\"Name\":\"CountNonNull(BlinkIT Grocery Data.Rating)\",\"NativeReferenceName\":\"Rating\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"45.64563863191588D\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Rating\"}},\"Right\":{\"Literal\":{\"Value\":\"3L\"}}}}}],\"metadata\":\"BlinkIT Grocery Data.Avarage sales\"}}],\"grid\":[{\"properties\":{\"gridHorizontal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"gridHorizontalColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ffffff'\"}}}}},\"gridVertical\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"gridVerticalColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ffffff'\"}}}}}}}],\"subTotals\":[{\"properties\":{\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnFormatting\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#C6BC50'\"}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}}},\"selector\":{\"metadata\":\"BlinkIT Grocery Data.total sales\"}},{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}},\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B8DF42'\"}}}}}},\"selector\":{\"metadata\":\"BlinkIT Grocery Data.Avarage sales\"}},{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}},\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#A2CC80'\"}}}}}},\"selector\":{\"metadata\":\"CountNonNull(BlinkIT Grocery Data.Rating)\"}},{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}},\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"metadata\":\"CountNonNull(BlinkIT Grocery Data.Item Visibility)\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Outlet type'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 151.18,
+          "width": 493.86,
+          "x": 764.30,
+          "y": 537.53,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"597972b164f8ac7014ac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":514.0157480314961,\"y\":346.03674540682414,\"z\":13000,\"width\":201.57480314960628,\"height\":344.3569553805774,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"BlinkIT Grocery Data.No of items\"}],\"Category\":[{\"queryRef\":\"BlinkIT Grocery Data.Item Type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Item Type\"},\"Name\":\"BlinkIT Grocery Data.Item Type\",\"NativeReferenceName\":\"Item Type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"No of items\"},\"Name\":\"BlinkIT Grocery Data.No of items\",\"NativeReferenceName\":\"No of items\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"No of items\"}}}]},\"queryFieldParametersByRole\":{\"Y\":[{\"index\":0,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"metrix\"}},\"Property\":\"metrix\"}}}]},\"columnProperties\":{\"BlinkIT Grocery Data.No of items\":{\"displayName\":\"No of items\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B8DF42'\"}}}}}}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFD200'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Item Type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Breakfast'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFD200'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Item Type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Others'\"}}}}}]}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'ITEM TYPE'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 344.36,
+          "width": 201.57,
+          "x": 514.02,
+          "y": 346.04,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"5ad2b923bea9bcd34589\",\"layouts\":[{\"id\":0,\"position\":{\"x\":31.916010498687662,\"y\":78.9501312335958,\"z\":0,\"width\":204.93438320209972,\"height\":641.6797900262467,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'tabRoundTopCorners'\"}}},\"tabRoundCornerTop\":{\"expr\":{\"Literal\":{\"Value\":\"20L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFD200'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"shadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"38D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 641.68,
+          "width": 204.93,
+          "x": 31.92,
+          "y": 78.95,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"6b7cf387394b598884c2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":67.19160104986877,\"y\":431.70603674540683,\"z\":21000,\"width\":132.7034120734908,\"height\":105.8267716535433,\"tabOrder\":20000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BlinkIT Grocery Data.Outlet Location Type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Outlet Location Type\"},\"Name\":\"BlinkIT Grocery Data.Outlet Location Type\",\"NativeReferenceName\":\"Outlet Location Type\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFD200'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 105.83,
+          "width": 132.70,
+          "x": 67.19,
+          "y": 431.71,
+          "z": 21000.00
+        },
+        {
+          "config": "{\"name\":\"6f0a4eb8cbb619f85150\",\"layouts\":[{\"id\":0,\"position\":{\"x\":265.4068241469816,\"y\":287.244094488189,\"z\":9000,\"width\":450.1837270341207,\"height\":53.75328083989501,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"metrix.metrix\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"metrix\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"metrix\"},\"Name\":\"metrix.metrix\",\"NativeReferenceName\":\"metrix\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"metrix\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"metrix Fields\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'''BlinkIT Grocery Data''[No of items]'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"items\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFD200'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFD200'\"}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"metrix\"}},\"Property\":\"metrix Fields\"}},\"Right\":{\"Literal\":{\"Value\":\"'''BlinkIT Grocery Data''[No of items]'\"}}}}},\"displayName\":\"No of items\"}]}}",
+          "filters": "[]",
+          "height": 53.75,
+          "width": 450.18,
+          "x": 265.41,
+          "y": 287.24,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"94762524e82f14a9990e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":251.96850393700785,\"y\":87.34908136482939,\"z\":3000,\"width\":240.20997375328082,\"height\":85.66929133858267,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"BlinkIT Grocery Data.total sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"total sales\"},\"Name\":\"BlinkIT Grocery Data.total sales\",\"NativeReferenceName\":\"TOTAL SALES\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"total sales\"}}}]},\"columnProperties\":{\"BlinkIT Grocery Data.total sales\":{\"displayName\":\"TOTAL SALES\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B8DF42'\"}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 85.67,
+          "width": 240.21,
+          "x": 251.97,
+          "y": 87.35,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"a1035641dbafbda0ebb6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":492.1784776902887,\"y\":87.34908136482939,\"z\":5000,\"width\":236.85039370078738,\"height\":85.66929133858267,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"BlinkIT Grocery Data.Avarage sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Avarage sales\"},\"Name\":\"BlinkIT Grocery Data.Avarage sales\",\"NativeReferenceName\":\"AVERAGE SALES\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Avarage sales\"}}}]},\"columnProperties\":{\"BlinkIT Grocery Data.Avarage sales\":{\"displayName\":\"AVERAGE SALES\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"categoryLabels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 85.67,
+          "width": 236.85,
+          "x": 492.18,
+          "y": 87.35,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"b6824edf9d0c48b9539e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":50.39370078740157,\"y\":173.01837270341207,\"z\":2000,\"width\":166.29921259842519,\"height\":35.275590551181104,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"India's last minute app\",\"textStyle\":{\"fontWeight\":\"bold\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFD200'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 35.28,
+          "width": 166.30,
+          "x": 50.39,
+          "y": 173.02,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"c334694a6e4ab47457cc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":715.5905511811023,\"y\":87.34908136482939,\"z\":7000,\"width\":564.4094488188977,\"height\":623.2020997375328,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}},\"selector\":{\"id\":\"default\"}}],\"shadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 623.20,
+          "width": 564.41,
+          "x": 715.59,
+          "y": 87.35,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"e11e1dbb45b41927115a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":18000,\"tabOrder\":21000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"e6c6d379634a09090201\",\"layouts\":[{\"id\":0,\"position\":{\"x\":764.3044619422571,\"y\":359.4750656167979,\"z\":15000,\"width\":221.73228346456693,\"height\":151.1811023622047,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"BlinkIT Grocery Data.Sales\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(BlinkIT Grocery Data.Outlet Size)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Sales\"},\"Name\":\"BlinkIT Grocery Data.Sales\",\"NativeReferenceName\":\"Sales\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Outlet Size\"}},\"Function\":5},\"Name\":\"CountNonNull(BlinkIT Grocery Data.Outlet Size)\",\"NativeReferenceName\":\"Count of Outlet Size\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Outlet Size\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B8DF42'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Sales\"}},\"Right\":{\"Literal\":{\"Value\":\"171.1422D\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFD200'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Sales\"}},\"Right\":{\"Literal\":{\"Value\":\"40.2822D\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B8DF42'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BlinkIT Grocery Data\"}},\"Property\":\"Sales\"}},\"Right\":{\"Literal\":{\"Value\":\"196.2426D\"}}}}}]}}],\"legend\":[{\"properties\":{\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B8DF42'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Outlet size'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 151.18,
+          "width": 221.73,
+          "x": 764.30,
+          "y": 359.48,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"f2b8aa6019a0215d9ff0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":70.55118110236221,\"y\":332.59842519685037,\"z\":20000,\"width\":132.7034120734908,\"height\":85.66929133858267,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BlinkIT Grocery Data.Outlet Size\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Outlet Size\"},\"Name\":\"BlinkIT Grocery Data.Outlet Size\",\"NativeReferenceName\":\"Outlet Size\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Outlet Size\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Medium'\"}}]]}}}]}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFD200'\"}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 85.67,
+          "width": 132.70,
+          "x": 70.55,
+          "y": 332.60,
+          "z": 20000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
